@@ -27,4 +27,8 @@ picture = PhotoImage(file="C:\\Users\\Estrella\\Desktop\\logo_2.png")
 Label(upper_frame, image=picture, bg = "#168aad").place(x = 40, y = -30)
 Label(upper_frame, text="Text to Speech Converter", font="Helvetica 40 bold italic", bg = "#168aad", fg = "white").place(x = 280, y = 65)
 
+Label(text="Enter your text here:", font="Helvetica 20 bold italic", bg = "#b5e48c", fg = "black").place(x = 30, y = 200)
+text_box = Text(root, font="calibri 12", bg = "white", relief = GROOVE, wrap = WORD, bd = 0)
+text_box.place(x = 30, y = 240, width = 940, height = 180)
+
 root.mainloop()
