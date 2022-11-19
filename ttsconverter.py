@@ -27,18 +27,22 @@ picture = PhotoImage(file="C:\\Users\\Estrella\\Desktop\\logo_2.png")
 Label(upper_frame, image=picture, bg = "#168aad").place(x = 40, y = -30)
 Label(upper_frame, text="Text to Speech Converter", font="Helvetica 40 bold italic", bg = "#168aad", fg = "white").place(x = 280, y = 65)
 
-Label(text="Enter your text here:", font="Helvetica 20 bold italic", bg = "#76c893", fg = "black").place(x = 30, y = 200)
+Label(root, text="Enter your text here:", font="Helvetica 20 bold italic", bg = "#76c893", fg = "black").place(x = 30, y = 200)
 text_box = Text(root, font="calibri 12", bg = "white", relief = GROOVE, wrap = WORD, bd = 0)
 text_box.place(x = 30, y = 240, width = 940, height = 180)
 
 gender_box = Combobox(root, values = ['Male', 'Female'], font = "Robote 12", state='r', width = 12)
 gender_box.place(x = 240, y = 500)
 gender_box.set('Male')
-Label(text="Choose your Speaker", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 220, y = 470)
+Label(root, text="Choose your Speaker", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 220, y = 470)
 
 speed_box = Combobox(root, values = ['Fast', 'Medium', 'Slow'], font = "Robote 12", state='r', width = 12)
 speed_box.place(x = 620, y = 500)
 speed_box.set('Medium')
-Label(text="Choose your Speaking Speed", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 570, y = 470)
+Label(root, text="Choose your Speaking Speed", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 570, y = 470)
+
+play_button = PhotoImage(file="C:\\Users\\Estrella\\Desktop\\playbtn.png")
+play_btn = Button(root, text = "Play Voice", compound = LEFT, image = play_button, bg = "white", width = 300, height = 100, font = "Helvetica 14 bold", borderwidth = '0.1c')
+play_btn.place(x = 350, y = 550)
 
 root.mainloop()
