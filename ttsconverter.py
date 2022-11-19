@@ -32,8 +32,13 @@ text_box = Text(root, font="calibri 12", bg = "white", relief = GROOVE, wrap = W
 text_box.place(x = 30, y = 240, width = 940, height = 180)
 
 gender_box = Combobox(root, values = ['Male', 'Female'], font = "Robote 12", state='r', width = 12)
-gender_box.place(x = 340, y = 500)
+gender_box.place(x = 240, y = 500)
 gender_box.set('Male')
-Label(text="Choose your Speaker", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 320, y = 470)
+Label(text="Choose your Speaker", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 220, y = 470)
+
+speed_box = Combobox(root, values = ['Fast', 'Medium', 'Slow'], font = "Robote 12", state='r', width = 12)
+speed_box.place(x = 620, y = 500)
+speed_box.set('Medium')
+Label(text="Choose your Speaking Speed", font="Helvetica 12 bold italic", bg = "#76c893", fg = "black").place(x = 570, y = 470)
 
 root.mainloop()
